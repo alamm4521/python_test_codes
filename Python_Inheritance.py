@@ -136,6 +136,26 @@ class Student002(Person_009):
 
 print("What year did they graduate in That 70s Show?")
 print("In Season 5, Episode 25 (Celebration Day), their tassels show 78 (for Class of 1978).")
-x = Student002("Michael", "Kelso", "1978")  
+x = Student002("Michael", "Kelso", 1978)  
 print(x.graduationyear)
+
+class Persion_010:
+     def __init__(self, fname, lname):
+          self.firstname = fname
+          self.lastname  = lname
+          
+     def printname(self):
+          print(self.firstname, self.lastname)
+          
+class Student_003(Persion_010):
+     def __init__(self, fname, lname, year):
+          super().__init__(fname, lname)
+          self.graduationyear = year
+
+     def welcome(self):
+          print("Wellcome", self.firstname, self.lastname, "THAT 70S SHOW CLASS OF ", self.graduationyear)
+
+x = Student_003("Michael", "Kelso", 1978)
+x.welcome()
+          
 
