@@ -111,6 +111,8 @@ To prevent the iteration from going on forever, we can use the StopIteration sta
 
 In the __next__() method, we can add a terminating condition to raise an error if the iteration is done a specified number of times:
 '''
+#Example
+#Stop after 20 iterations:
 
 class MyNumbers_001:
     def ___iter__(self):
