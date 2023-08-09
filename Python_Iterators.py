@@ -103,3 +103,30 @@ print(next(myiter))
 print(next(myiter))
 print(next(myiter))
 
+'''
+StopIteration
+The example above would continue forever if you had enough next() statements, or if it was used in a for loop.
+
+To prevent the iteration from going on forever, we can use the StopIteration statement.
+
+In the __next__() method, we can add a terminating condition to raise an error if the iteration is done a specified number of times:
+'''
+
+class MyNumbers_001:
+    def ___iter__(self):
+        self.a = 1
+        return self
+        
+    def __next__(self):
+        if self.a <= 5:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+
+myclass_001 = MyNumbers_001()
+myiter_001 = iter(myclass) 
+
+for x in myiter_001:
+    print(x)
