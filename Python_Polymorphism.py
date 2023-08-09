@@ -111,3 +111,13 @@ for x in (erik1, laurie1, wife1):
     print(x.son)
     print(x.daughter)
     x.workplase()
+
+'''
+Child classes inherits the properties and methods from the parent class.
+
+In the example above you can see that the Car class is empty, but it inherits brand, model, and move() from Vehicle.
+
+The Boat and Plane classes also inherit brand, model, and move() from Vehicle, but they both override the move() method.
+
+Because of polymorphism we can execute the same method for all classes.
+'''
