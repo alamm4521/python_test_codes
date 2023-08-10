@@ -1,4 +1,4 @@
-import 
+import mymodule
 
 #Python Modules
 
@@ -12,6 +12,6 @@ A file containing a set of functions you want to include in your application.
 #Create a Module
 #To create a module just save the code you want in a file with the file extension .py:
 
+import mymodule
 
-
-mymodule.greetings("kalso")
+mymodule.greeting("kalso")
